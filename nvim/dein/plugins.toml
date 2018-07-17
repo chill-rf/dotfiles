@@ -92,3 +92,15 @@ repo = 'tpope/vim-fugitive'
 # scrooloose/nerdtree
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+
+# autozimu/LanguageClinet-neovim
+[[plugins]]
+repo = 'autozimu/LanguageClient-neovim'
+rev = 'next'
+build = 'bash install.sh'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['context_filetype.vim']
+on_event = 'InsertCharPre'
+on_ft = 'snippet'

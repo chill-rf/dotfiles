@@ -26,6 +26,8 @@ call dein#load_toml(s:toml_dir . '/plugins.toml', {'lazy': 0})
 call dein#load_toml(s:toml_dir . '/lazy.toml', {'lazy': 1})
 if has('python3')
     call dein#load_toml(s:toml_dir . '/python.toml', {'lazy': 1})
+else
+    call dein#load_toml(s:toml_dir . '/deoplete.toml', {'lazy': 1})
 endif
 
 call dein#end()
