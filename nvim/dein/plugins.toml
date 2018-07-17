@@ -115,3 +115,7 @@ on_ft = 'snippet'
 # pangloss/vim-javascript
 [[plugins]]
 repo = 'pangloss/vim-javascript'
+
+# moll/vim-node
+[[plugins]]
+repo = 'moll/vim-node'
