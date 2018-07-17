@@ -26,11 +26,6 @@ if has('nvim')
   tnoremap <silent> <ESC> <C-\><C-n>
 endif
 
-function! ALEStatus()
-  return ALEGetStatusLine()
-endfunction
-
-
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
