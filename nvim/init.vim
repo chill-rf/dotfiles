@@ -96,7 +96,7 @@ set hidden
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+"    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
     \ }
 
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
