@@ -111,3 +111,7 @@ repo = 'Shougo/neosnippet.vim'
 depends = ['context_filetype.vim']
 on_event = 'InsertCharPre'
 on_ft = 'snippet'
+
+# pangloss/vim-javascript
+[[plugins]]
+repo = 'pangloss/vim-javascript'
