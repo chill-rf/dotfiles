@@ -1,0 +1,26 @@
+## Receive options.
+set imap_user="y.hieda@chillda.com"
+set imap_pass="tvbrvuqfrivpcrml"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = +INBOX
+set postponed = "+[GMail]/Drafts"
+set record = "+[GMail]/Sent Mail"
+
+## Send options.
+set smtp_url=smtps://y.hieda@chillda.com@smtp.gmail.com
+set smtp_pass = "tvbrvuqfrivpcrml"
+set realname='Yusaku Hieda'
+set from=y.hieda@chillda.com
+set hostname="gmail.com"
+# set signature="John Doe"
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+set header_cache = ~/.cache/mutt/com.chillda.y.hieda/headers
+set message_cachedir = ~/.cache/mutt/com.chillda.y.hieda/bodies
+set certificate_file = ~/.mutt/com.chillda.y.hieda/certificates
+
+## Hook -- IMPORTANT!
+account-hook "chillda" "set imap_user=y.hieda@chillda.com imap_pass=tvbrvuqfrivpcrml"
+
