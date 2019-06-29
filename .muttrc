@@ -221,3 +221,6 @@ mono  body underline           "(^|[[:space:][:punct:]])_[^_]+_([[:space:][:punc
 
 # Border lines.
 color body blue default "( *[-+=#*~_]){6,}"
+
+folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
+folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
