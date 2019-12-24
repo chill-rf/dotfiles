@@ -4,14 +4,8 @@ source "~/.mutt/account/uiyiuyiyi"
 # We must set it right now otherwise the 'folder' variable will change in the next sourced file.
 folder-hook 'uiyiuyiyi' 'source ~/.mutt/account/uiyiuyiyi'
 
-## ACCOUNT2 chillda
-# Here we use the $folder variable that has just been set in the sourced file.
-# We must set it right now otherwise the 'folder' variable will change in the next sourced file.
-folder-hook 'chillda' 'source ~/.mutt/account/chillda'
-
 ## Shortcuts
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/account/uiyiuyiyi<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/account/chillda<enter><change-folder>!<enter>'
 macro index 'c' '<change-folder>?<change-dir><home>^K=<enter>'
 
 # Change the following line to a different editor you prefer.
